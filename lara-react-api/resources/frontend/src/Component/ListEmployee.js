@@ -28,8 +28,8 @@ export default class ListEmployee extends Component {
       .delete("http://localhost:8000/api/emp/" + empId)
       .then((response) => {
         if (response.data != null) {
-          alert("Employee Delete Sucessfully.!");
-          this.setState({
+                alert("Employee Delete Sucessfully.!");
+                this.setState({
             emp: this.state.emp.filter((emp) => emp.id !== empId),
           });
         }

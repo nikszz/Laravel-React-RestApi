@@ -98,7 +98,7 @@ export default class Employee extends Component {
         <Card.Header>
           {this.state.id ? "Update Employee" : "Save Employee"}
         </Card.Header>
-        <Form method="put"
+        <Form 
           onReset={this.resetEmp}
           onSubmit={this.state.id ? this.updateEmp : this.submitEmp}
           id="EmpFormId">
